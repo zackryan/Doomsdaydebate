@@ -6,11 +6,11 @@ table
 		th text
 
 
-	=@posts.each do |post|
+	 = @posts.each do |post|
 		tr
 			td 
-				=post.title
+				== post.title
 			td 
-				=post.text
+				== post.text
 end
 
