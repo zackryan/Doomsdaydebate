@@ -2,7 +2,7 @@ Doomsday::Application.routes.draw do
   
   resources :posts
   
-  root 'welcome#index'
+  root 'posts#index'
 
 
 end
