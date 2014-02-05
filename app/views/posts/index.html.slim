@@ -1,16 +1,16 @@
 h1 Listing Posts
 
+=link_to 'New post', new_post_path
+
 table
 	tr
 		th Title
-		th text
+		th Text
 
-
-	 = @posts.each do |post|
+	-@posts.each do |post|
 		tr
-			td 
-				== post.title
-			td 
-				== post.text
+			td =post.title
+			td =post.text
+	 
 end
 
